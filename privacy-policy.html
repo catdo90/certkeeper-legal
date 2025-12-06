@@ -22,6 +22,10 @@
             color: #007AFF;
             margin-top: 30px;
         }
+        h3 {
+            color: #555;
+            margin-top: 20px;
+        }
         .last-updated {
             color: #666;
             font-style: italic;
@@ -36,6 +40,20 @@
         strong {
             color: #000;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -43,64 +61,162 @@
     <p class="last-updated">Last Updated: December 2024</p>
 
     <h2>Introduction</h2>
-    <p>Certkeeper ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.</p>
+    <p>CertKeeper ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application. This policy is designed to comply with Apple's App Privacy requirements and applicable privacy laws.</p>
 
     <h2>Information We Collect</h2>
-    <p>We collect the following types of information:</p>
+    <p>We collect the following types of information, categorized according to Apple's App Privacy standards:</p>
+
+    <h3>Contact Information</h3>
     <ul>
-        <li><strong>Personal Information</strong>: Your name, email address (if provided), industry, role, and professional profile information.</li>
-        <li><strong>Certification Data</strong>: Certifications, licenses, vaccinations, CEU credits, work badges, state licenses, and related documents you upload.</li>
-        <li><strong>Device Information</strong>: Device name and model (for broken link reporting and support purposes).</li>
-        <li><strong>Usage Data</strong>: App usage patterns and preferences to improve our services.</li>
+        <li><strong>Name</strong>: Your first and last name (collected when you sign in with Apple or create an email account)</li>
+        <li><strong>Email Address</strong>: Your email address (collected when you sign in with Apple, create an email account, or use Firebase Authentication)</li>
+    </ul>
+
+    <h3>User Content</h3>
+    <ul>
+        <li><strong>Resume Files</strong>: PDF, DOCX, or text files you upload for AI-powered analysis</li>
+        <li><strong>Certification Documents</strong>: Images, PDFs, and documents related to your certifications, licenses, and credentials</li>
+        <li><strong>Chat Messages</strong>: Messages you send to the AI chat assistant</li>
+        <li><strong>Professional Profile</strong>: Industry, role, years of experience, career goals, current certifications, and department information</li>
+    </ul>
+
+    <h3>Health & Fitness</h3>
+    <ul>
+        <li><strong>Vaccination Records</strong>: Vaccination dates, types, and expiration information you enter</li>
+    </ul>
+
+    <h3>Other User Content</h3>
+    <ul>
+        <li><strong>Free-form Text</strong>: Any text you enter in the app, including certification notes, descriptions, and chat messages</li>
+    </ul>
+
+    <h3>Product Interaction</h3>
+    <ul>
+        <li><strong>App Usage Data</strong>: How you interact with the app to improve our services (if collected)</li>
     </ul>
 
     <h2>How We Use Your Information</h2>
-    <p>We use the information we collect to:</p>
+    <p>We use the information we collect for the following purposes:</p>
     <ul>
-        <li>Provide and maintain the Certkeeper service</li>
-        <li>Send you expiration reminders and notifications</li>
-        <li>Sync your data across devices via iCloud</li>
-        <li>Improve and personalize your experience</li>
-        <li>Provide customer support</li>
-        <li>Monitor and analyze app usage</li>
+        <li><strong>App Functionality</strong>: To provide and maintain the CertKeeper service, authenticate users, enable features, and sync data across devices</li>
+        <li><strong>Product Personalization</strong>: To personalize your experience, provide AI-powered career recommendations, and customize content based on your profile</li>
+        <li><strong>Analytics</strong>: To understand app usage patterns and improve our services (if applicable)</li>
+        <li><strong>Customer Support</strong>: To respond to your inquiries and provide technical support</li>
     </ul>
 
-    <h2>Data Storage</h2>
-    <p><strong>Local Storage</strong>: All your data is stored locally on your device with encryption. Your certifications, documents, and personal information remain on your device unless you enable iCloud Sync.</p>
-    <p><strong>iCloud Sync</strong>: When enabled, your data is synced to Apple's CloudKit service, which uses end-to-end encryption. We do not have access to your iCloud data.</p>
-    <p><strong>No Third-Party Sharing</strong>: We do not sell, trade, or share your personal information with third parties. Your data is yours alone.</p>
+    <h2>Data Collection and Storage</h2>
+    
+    <h3>Local Storage</h3>
+    <p>Most of your data is stored locally on your device with encryption. This includes:</p>
+    <ul>
+        <li>Certifications, licenses, and related documents</li>
+        <li>Vaccination records</li>
+        <li>CEU credits</li>
+        <li>Work badges</li>
+        <li>State licenses</li>
+        <li>Your professional profile</li>
+    </ul>
+    <p><strong>Data stored locally is not "collected" under Apple's definition</strong> because it never leaves your device unless you enable iCloud Sync.</p>
 
-    <h2>Apple Sign In</h2>
-    <p>When you sign in with Apple, we only receive your name and email (if you choose to share it). We do not have access to your Apple ID password or other Apple account information.</p>
+    <h3>iCloud Sync (CloudKit)</h3>
+    <p>When you enable iCloud Sync, your data is synced to Apple's CloudKit service, which uses end-to-end encryption. We do not have access to your iCloud data. Apple handles this data according to their privacy policy.</p>
+
+    <h3>Data Sent to Our Servers</h3>
+    <p>The following data is transmitted off your device to provide app functionality:</p>
+    <ul>
+        <li><strong>Authentication Data</strong>: Email and password (hashed) sent to Firebase Authentication for account management</li>
+        <li><strong>AI Service Data</strong>: When you use AI features, the following data is sent to our AI service provider (Render.com):
+            <ul>
+                <li>Resume content (when you upload a resume for analysis)</li>
+                <li>User profile information (industry, role, experience) for personalized recommendations</li>
+                <li>Chat messages (for AI chat assistant)</li>
+                <li>Certification lists (for career recommendations)</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Third-Party Services</h2>
+    <p>We use the following third-party services:</p>
+
+    <h3>Firebase Authentication (Google)</h3>
+    <ul>
+        <li><strong>Purpose</strong>: User authentication for email/password accounts</li>
+        <li><strong>Data Collected</strong>: Email address, password (hashed), name</li>
+        <li><strong>Data Use</strong>: App Functionality (authentication)</li>
+        <li><strong>Data Linked to User</strong>: Yes</li>
+        <li><strong>Tracking</strong>: No</li>
+        <li><strong>Privacy Policy</strong>: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
+    </ul>
+
+    <h3>AI Service (Render.com)</h3>
+    <ul>
+        <li><strong>Purpose</strong>: Provide AI-powered features (resume analysis, career recommendations, chat assistant)</li>
+        <li><strong>Data Collected</strong>: Resume content, user profile data, chat messages, certification information</li>
+        <li><strong>Data Use</strong>: App Functionality, Product Personalization</li>
+        <li><strong>Data Linked to User</strong>: No (data is processed but not stored or linked to your identity)</li>
+        <li><strong>Tracking</strong>: No</li>
+        <li><strong>Data Retention</strong>: Data is processed in real-time and not stored by the AI service</li>
+    </ul>
+
+    <h3>Apple Services</h3>
+    <ul>
+        <li><strong>Sign in with Apple</strong>: We receive your name and email (if you choose to share it). We do not have access to your Apple ID password.</li>
+        <li><strong>CloudKit/iCloud</strong>: Data sync service. Apple handles this data according to their privacy policy.</li>
+        <li><strong>StoreKit</strong>: Subscription management. Apple handles this data according to their privacy policy.</li>
+    </ul>
+
+    <h2>Data Linked to Your Identity</h2>
+    <p>Some data we collect is linked to your identity:</p>
+    <ul>
+        <li><strong>Linked to Identity</strong>: Name, email address, authentication credentials, professional profile</li>
+        <li><strong>Not Linked to Identity</strong>: AI service processes data without storing or linking it to your identity</li>
+    </ul>
+
+    <h2>Tracking</h2>
+    <p><strong>We do not track you.</strong> We do not:</p>
+    <ul>
+        <li>Link data collected from our app with third-party data for advertising purposes</li>
+        <li>Share your data with data brokers</li>
+        <li>Use your data for targeted advertising</li>
+        <li>Share your data with third-party advertising networks</li>
+    </ul>
+    <p>Data collected is used solely for app functionality and product personalization within CertKeeper.</p>
 
     <h2>Data Security</h2>
     <p>We implement appropriate technical and organizational measures to protect your data:</p>
     <ul>
         <li>All data stored locally is encrypted</li>
-        <li>iCloud Sync uses Apple's secure CloudKit service</li>
-        <li>We do not transmit your data to our servers (except for optional broken link reports)</li>
-        <li>Your documents and certifications are stored securely on your device</li>
+        <li>iCloud Sync uses Apple's secure CloudKit service with end-to-end encryption</li>
+        <li>Authentication credentials are hashed and secured through Firebase</li>
+        <li>AI service communications use secure HTTPS connections</li>
+        <li>We do not store sensitive data on our servers (AI service processes data in real-time without storage)</li>
     </ul>
 
     <h2>Your Rights</h2>
     <p>You have the right to:</p>
     <ul>
-        <li>Access your personal data at any time</li>
-        <li>Delete your data by clearing all app data in Settings</li>
-        <li>Disable iCloud Sync at any time</li>
-        <li>Export your credentials and data</li>
-        <li>Request information about data we collect</li>
+        <li><strong>Access</strong>: Access your personal data at any time through the app</li>
+        <li><strong>Delete</strong>: Delete your data by clearing all app data in Settings or by deleting your account</li>
+        <li><strong>Export</strong>: Export your credentials and data</li>
+        <li><strong>Disable Sync</strong>: Disable iCloud Sync at any time in Settings</li>
+        <li><strong>Request Information</strong>: Request information about data we collect by contacting us</li>
     </ul>
+    <p>To exercise these rights, contact us at <a href="mailto:Admin@certkeeper.app">Admin@certkeeper.app</a></p>
 
     <h2>Children's Privacy</h2>
-    <p>Certkeeper is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us at Admin@certkeeper.app and we will delete such information.</p>
+    <p>CertKeeper is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us at <a href="mailto:Admin@certkeeper.app">Admin@certkeeper.app</a> and we will delete such information.</p>
 
     <h2>Changes to This Privacy Policy</h2>
-    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy in the app and updating the "Last Updated" date.</p>
+    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy in the app and updating the "Last Updated" date. Your continued use of the app after such changes constitutes acceptance of the updated policy.</p>
 
     <h2>Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:Admin@certkeeper.app">Admin@certkeeper.app</a></p>
+    <p>If you have any questions about this Privacy Policy or our data practices, please contact us at:</p>
+    <p><strong>Email:</strong> <a href="mailto:Admin@certkeeper.app">Admin@certkeeper.app</a></p>
+    <p><strong>Privacy Choices:</strong> You can manage your privacy choices and request data deletion by contacting us at the email above.</p>
 </body>
 </html>
+
+
+
 
 
