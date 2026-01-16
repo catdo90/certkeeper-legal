@@ -32,8 +32,8 @@ CertKeeper helps licensed professionals manage certifications, licenses, vaccina
 
 ## Links
 
-- **Privacy Policy**: https://certkeeper.app/privacy
-- **Terms of Service**: https://certkeeper.app/terms
+- **Privacy Policy**: https://catdo90.github.io/certkeeper-legal/privacy-policy.html
+- **Terms of Service**: https://catdo90.github.io/certkeeper-legal/terms-of-service.html
 - **Support Email**: Admin@certkeeper.app
 - **Main Repository**: https://github.com/catdo90/certkeeper-legal
 
