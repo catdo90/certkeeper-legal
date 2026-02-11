@@ -12,37 +12,27 @@
             margin: 0 auto;
             padding: 20px;
             color: #333;
-            background-color: #fff;
         }
         h1 {
-            color: #2c3e50;
-            border-bottom: 3px solid #3498db;
+            color: #007AFF;
+            border-bottom: 2px solid #007AFF;
             padding-bottom: 10px;
         }
         h2 {
-            color: #34495e;
+            color: #007AFF;
             margin-top: 30px;
-            margin-bottom: 15px;
-        }
-        p {
-            margin-bottom: 15px;
-        }
-        ul {
-            margin-bottom: 15px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        strong {
-            color: #2c3e50;
         }
         .last-updated {
-            color: #7f8c8d;
+            color: #666;
             font-style: italic;
             margin-bottom: 30px;
         }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
         .contact {
-            background-color: #ecf0f1;
+            background-color: #f5f5f5;
             padding: 15px;
             border-radius: 5px;
             margin-top: 30px;
@@ -51,16 +41,16 @@
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p class="last-updated">Last Updated: January 29, 2026</p>
+    <p class="last-updated"><strong>Last Updated:</strong> February 2026</p>
 
     <h2>Introduction</h2>
-    <p>Certkeeper ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.</p>
+    <p>CertKeeper ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.</p>
 
     <h2>Information We Collect</h2>
     <p>We collect the following types of information:</p>
     <ul>
         <li><strong>Personal Information</strong>: Your name, email address (if provided), industry, role, and professional profile information.</li>
-        <li><strong>Certification Data</strong>: Certifications, licenses, vaccinations, CEU credits, work badges, state licenses, and related documents you upload.</li>
+        <li><strong>Certification Data</strong>: Certifications, licenses, vaccinations, CEU credits, work badges, state licenses, employment requirements, and related documents you upload.</li>
         <li><strong>Device Information</strong>: Device name and model (for broken link reporting and support purposes).</li>
         <li><strong>Usage Data</strong>: App usage patterns and preferences to improve our services.</li>
     </ul>
@@ -68,18 +58,36 @@
     <h2>How We Use Your Information</h2>
     <p>We use the information we collect to:</p>
     <ul>
-        <li>Provide and maintain the Certkeeper service</li>
-        <li>Send you expiration reminders and notifications</li>
-        <li>Sync your data across devices via iCloud</li>
+        <li>Provide and maintain the CertKeeper service</li>
+        <li>Send you expiration reminders and notifications via push notifications, calendar events, and email</li>
+        <li>Sync your data across devices via Cloud Sync (for both email and Apple Sign-In accounts)</li>
+        <li>Generate compliance reports and export credentials</li>
+        <li>Provide healthcare tools (dosage calculator, unit converters, etc.) - all calculations are performed locally with no data storage</li>
         <li>Improve and personalize your experience</li>
         <li>Provide customer support</li>
         <li>Monitor and analyze app usage</li>
     </ul>
 
     <h2>Data Storage</h2>
-    <p><strong>Local Storage</strong>: All your data is stored locally on your device with encryption. Your certifications, documents, and personal information remain on your device unless you enable Cloud Sync.</p>
-    <p><strong>Cloud Sync</strong>: When enabled, your data is synced to secure cloud services (iCloud for Apple ID accounts, Firebase for email accounts) using end-to-end encryption. We do not have access to your synced data.</p>
+    <p><strong>Local Storage</strong>: All your data is stored locally on your device with encryption. Your certifications, documents, and personal information remain on your device.</p>
+    
+    <p><strong>Cloud Sync</strong>: Your data is synced to secure cloud storage (Firebase/Firestore) to back up and sync across devices. For email accounts, Cloud Sync is always enabled. For Apple Sign-In accounts, you can enable Cloud Sync in Settings. When enabled, your certifications, vaccinations, CEU credits, work badges, state licenses, and profile are stored securely and synced across all devices where you sign in with the same account.</p>
+    
+    <p><strong>Calendar Sync (Premium Feature)</strong>: When enabled, CertKeeper creates calendar events in your iOS calendar for certification expirations and employment requirement deadlines. These events are stored in your device's calendar and synced through your iCloud account. We do not access or modify existing calendar events.</p>
+    
+    <p><strong>Email Reminders (Premium Feature)</strong>: When enabled, CertKeeper sends email reminders to your registered email address for critical alerts. Your email address is retrieved from your account and used solely for sending reminder notifications.</p>
+    
     <p><strong>No Third-Party Sharing</strong>: We do not sell, trade, or share your personal information with third parties. Your data is yours alone.</p>
+
+    <h2>Healthcare Tools Privacy</h2>
+    <p>CertKeeper includes healthcare-specific tools (Dosage Calculator, Unit Converters, IV Drip Rate Calculator, Shift Checklist). These tools:</p>
+    <ul>
+        <li>Perform calculations locally on your device</li>
+        <li>Do not store any patient-identifiable information</li>
+        <li>Are HIPAA-safe - no Protected Health Information (PHI) is collected or stored</li>
+        <li>Do not transmit any data to our servers</li>
+    </ul>
+    <p>All healthcare tools are reference-only and designed to comply with HIPAA regulations.</p>
 
     <h2>Apple Sign In</h2>
     <p>When you sign in with Apple, we only receive your name and email (if you choose to share it). We do not have access to your Apple ID password or other Apple account information.</p>
@@ -88,31 +96,33 @@
     <p>We implement appropriate technical and organizational measures to protect your data:</p>
     <ul>
         <li>All data stored locally is encrypted</li>
-        <li>Cloud Sync uses secure cloud services with end-to-end encryption</li>
-        <li>We do not transmit your data to our servers (except for optional broken link reports)</li>
-        <li>Your documents and certifications are stored securely on your device</li>
+        <li>Cloud Sync uses secure cloud infrastructure (Firebase) with industry-standard security</li>
+        <li>Biometric authentication (Face ID/Touch ID) available for additional security</li>
+        <li>Data transmitted for Cloud Sync is encrypted in transit</li>
+        <li>Your documents and certifications are stored securely on your device and in the cloud when sync is enabled</li>
     </ul>
-
-    <h2>Free Trial Enforcement</h2>
-    <p>To prevent abuse of free trials, CertKeeper maintains a limited internal record indicating whether a free trial has already been used for a given account identity (such as an email address or Apple Sign-In identifier). This record is used solely to enforce one-time trial eligibility and does not contain personal profile data, certifications, or uploaded files.</p>
-    <p>CertKeeper does not use device fingerprinting, location tracking, or cross-app tracking to enforce free trial limitations.</p>
 
     <h2>Your Rights</h2>
     <p>You have the right to:</p>
     <ul>
         <li>Access your personal data at any time</li>
-        <li>Delete your account and all associated data through Settings > Account Management > Delete Account</li>
-        <li>Disable Cloud Sync at any time (for Apple ID accounts)</li>
-        <li>Export your credentials and data</li>
+        <li>Delete your account and all associated data via Settings > Account Management > Delete Account</li>
+        <li>Disable Cloud Sync (Apple Sign-In), Calendar Sync, or Email Reminders at any time</li>
+        <li>Export your credentials and data (including Compliance Reports)</li>
         <li>Request information about data we collect</li>
     </ul>
 
-    <h2>Data Retention & Deletion</h2>
-    <p><strong>Account Deletion</strong>: When you delete your CertKeeper account, your profile data, certifications, uploaded files, and related information are permanently removed from our systems. Certain minimal records may be retained for legal, security, or fraud-prevention purposes, such as enforcing one-time free trial eligibility.</p>
-    <p><strong>Trial Eligibility Records</strong>: Records used to enforce one-time free trial eligibility are maintained independently of your account data and are not deleted when you delete your account. This ensures fair trial access for all users.</p>
+    <h2>Account Deletion</h2>
+    <p>You may delete your CertKeeper account at any time through Settings > Account Management > Delete Account. When you delete your account:</p>
+    <ul>
+        <li>All your data (certifications, vaccinations, CEU credits, work badges, state licenses, profile, and cloud backups) is permanently deleted from our servers</li>
+        <li>Your local app data is cleared</li>
+        <li>Your authentication account is removed</li>
+        <li>Deleting your account does not cancel an active subscription—you must cancel separately through your App Store account settings</li>
+    </ul>
 
     <h2>Children's Privacy</h2>
-    <p>Certkeeper is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us at Admin@certkeeper.app and we will delete such information.</p>
+    <p>CertKeeper is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us at Admin@certkeeper.app and we will delete such information.</p>
 
     <h2>Changes to This Privacy Policy</h2>
     <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy in the app and updating the "Last Updated" date.</p>
